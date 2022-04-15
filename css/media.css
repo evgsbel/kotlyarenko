@@ -1,0 +1,111 @@
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 52px 0 48px;
+  }
+  .header__wrapper {
+    flex-wrap: wrap;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav__list {
+    justify-content: center;
+  }
+  .header__slogan {
+    order: -1;
+    width: 100%;
+  }
+  .header__title {
+    margin: 0 auto 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .actors, .roles, .reviews, .group {
+    padding: 100px 0;
+  }
+  h1, .title-h1 {
+    font-size: 50px;
+  }
+  h2, .title-h2 {
+    font-size: 38px;
+  }
+  h3, .title-h3 {
+    font-size: 28px;
+  }
+  .hero__description {
+    font-size: 18px;
+  }
+  .actors__wr {
+    flex-wrap: wrap;
+  }
+  .actors__col {
+    flex: 0 0 100%
+  }
+  .actors__date, .actors__description {
+    font-size: 17px;
+  }
+  .actors__date {
+    margin-bottom: 20px;
+  }
+  .group__item {
+    flex: 0 0 calc((100% - 1 * 40px) / 2);
+  }
+  .reviews__item {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+  }
+  .nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    left: 0;
+    top: 0;
+    z-index: 500;
+    transform: translateY(-100%);
+    transition: transform .5s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+  }
+  .nav.is-open {
+    transform: translateY(0);
+  }
+  .nav__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .burger {
+    display: flex;
+  }
+  .group__item {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  h1, .title-h1 {
+    font-size: 40px;
+  }
+  h2, .title-h2 {
+    font-size: 30px;
+  }
+  h3, .title-h3 {
+    font-size: 23px;
+  }
+  .hero {
+    height: auto;
+    padding: 150px 0 100px;
+  }
+  .header__title {
+    font-size: 18px;
+    margin: 0 0 0 auto;
+    text-align: right;
+  }
+}
